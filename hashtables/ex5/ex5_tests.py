@@ -39,12 +39,7 @@ class TestEx2(unittest.TestCase):
         for i in range(1000000):
             queries.append(f"nofile{i}")
 
-        queries += [
-            "file3490",
-            "file256",
-            "file999999",
-            "file8192"
-        ]
+        queries += ["file3490", "file256", "file999999", "file8192"]
 
         result = finder(files, queries)
         result.sort()
